@@ -22,12 +22,12 @@ class Dog
   def self.drop_table
     sql = "DROP TABLE dogs"
     DB[:conn].execute(sql)
-  end 
+  end
 
   def save(name, breed)
     dog = Dog.new(name, breed)
     dog.save
-    dog 
+    dog
   end 
 
 
