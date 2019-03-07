@@ -8,6 +8,14 @@ class Dog
     self.id ||= nil
   end
 
+  def self.create_table
+    sql = <<-SQL 
+      CREATE TABLE dogs (
+        id INTEGER PRIMARY KEY, 
+        name TEXT,
+        breed TEXT
+      )
+      SQL
 
 
 
