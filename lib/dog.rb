@@ -48,6 +48,7 @@ class Dog
       :breed => row[2]
     }
       self.new(attributes_hash)
+  end 
 
   def self.find_by_id(id)
     sql = <<-SQL
@@ -58,7 +59,5 @@ class Dog
       self.new_from_db(row)
     end.first
   end
-
-
 
 end
