@@ -87,7 +87,7 @@ class Dog
     end.first
   end
 
-  def update 
+  def update
     sql = <<-SQL
       UPDATE dogs SET name = ?, breed = ? WHERE name =
     SQL
