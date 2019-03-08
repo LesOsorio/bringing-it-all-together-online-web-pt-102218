@@ -59,7 +59,7 @@ class Dog
     else
       dog = self.create(attributes)
     end
-      dog 
+      dog
   end
 
   def self.new_from_db(row)
